@@ -1,0 +1,10 @@
+body {
+    color: #7a1591;
+    background-color: #f4e0f6
+   }
+   .jumbotron {
+    background-image: url("https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20210208121145/ri/1200/picture/2021/2/shutterstock_1417926962.jpg");
+    background-size: 100% 100%;
+    color: #9bebf3;
+    text-align: center;
+   }

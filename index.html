@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
@@ -25,24 +27,37 @@
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
+
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
+         
           <div id="sample-metadata" class="panel-body"></div>
         </div>
-    
+        <p>
+          Select a different Test Subject ID Number to see their key demographic information. 
+        </p>
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+        <p>
+          This bar chart represents the top ten bacteria cultures found in the bellbuttons of each of the test subjects. As you select a different Test Subject ID No, the top 10 bacteria cultures found changes. 
+          <p>  
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <p>
+          The gauge chart illustrates the number of times the selected test subject scrubs their bellybutton per week. 
+        </p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <p>
+          This bubble chart illustrates the types of bacteria found in each Test Subject, the size of the bubbles in each bubble chart correlates to the amount of bacteria culture found in each test subject. 
+          <p>   
       </div>
     </div>
   </div>
