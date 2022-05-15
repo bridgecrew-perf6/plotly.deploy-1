@@ -115,7 +115,7 @@ function buildCharts(sample) {
       mode: "markers",
       markers: {
         size:sampleValues,
-        color:sampleValues
+        color:otuIDS
       }
     }];
 
@@ -123,14 +123,10 @@ function buildCharts(sample) {
     var bubbleLayout = {
       title: "Bacteria Clutures Per Sample",
       xaxis: { title: "OTU ID" },
-     margin: {
-        l: 50,
-        r: 50,
-        b: 100,
-        t: 100
-      },
+      hovermode: "closest",
+
     };
     // 3. Use Plotly to plot the data with the layout.
-    Plotly.newPlot("bubble", [bubbleData], bubbleLayout);
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout);
   });
   };
